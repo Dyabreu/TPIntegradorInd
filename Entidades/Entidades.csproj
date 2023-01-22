@@ -58,59 +58,6 @@
     <Compile Include="Enfermero.cs" />
     <Compile Include="Habitación.cs" />
     <Compile Include="Medico.cs" />
-    <Compile Include="Migrations\202301180319123_initial.cs" />
-    <Compile Include="Migrations\202301180319123_initial.designer.cs">
-      <DependentUpon>202301180319123_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301181405207_prueba.cs" />
-    <Compile Include="Migrations\202301181405207_prueba.designer.cs">
-      <DependentUpon>202301181405207_prueba.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301181502423_id-changes.cs" />
-    <Compile Include="Migrations\202301181502423_id-changes.designer.cs">
-      <DependentUpon>202301181502423_id-changes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301181546232_telefono-string.cs" />
-    <Compile Include="Migrations\202301181546232_telefono-string.designer.cs">
-      <DependentUpon>202301181546232_telefono-string.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301181548377_adornos-persona.cs" />
-    <Compile Include="Migrations\202301181548377_adornos-persona.designer.cs">
-      <DependentUpon>202301181548377_adornos-persona.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301182107441_upload.cs" />
-    <Compile Include="Migrations\202301182107441_upload.designer.cs">
-      <DependentUpon>202301182107441_upload.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301191421526_foreign-key.cs" />
-    <Compile Include="Migrations\202301191421526_foreign-key.designer.cs">
-      <DependentUpon>202301191421526_foreign-key.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301191430193_try.cs" />
-    <Compile Include="Migrations\202301191430193_try.designer.cs">
-      <DependentUpon>202301191430193_try.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301191431504_2try.cs" />
-    <Compile Include="Migrations\202301191431504_2try.designer.cs">
-      <DependentUpon>202301191431504_2try.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301191435147_try3.cs" />
-    <Compile Include="Migrations\202301191435147_try3.designer.cs">
-      <DependentUpon>202301191435147_try3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301191442132_new-base.cs" />
-    <Compile Include="Migrations\202301191442132_new-base.designer.cs">
-      <DependentUpon>202301191442132_new-base.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301191448266_name-change.cs" />
-    <Compile Include="Migrations\202301191448266_name-change.designer.cs">
-      <DependentUpon>202301191448266_name-change.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301191504359_again.cs" />
-    <Compile Include="Migrations\202301191504359_again.designer.cs">
-      <DependentUpon>202301191504359_again.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -126,47 +73,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202301180319123_initial.resx">
-      <DependentUpon>202301180319123_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301181405207_prueba.resx">
-      <DependentUpon>202301181405207_prueba.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301181502423_id-changes.resx">
-      <DependentUpon>202301181502423_id-changes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301181546232_telefono-string.resx">
-      <DependentUpon>202301181546232_telefono-string.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301181548377_adornos-persona.resx">
-      <DependentUpon>202301181548377_adornos-persona.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301182107441_upload.resx">
-      <DependentUpon>202301182107441_upload.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301191421526_foreign-key.resx">
-      <DependentUpon>202301191421526_foreign-key.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301191430193_try.resx">
-      <DependentUpon>202301191430193_try.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301191431504_2try.resx">
-      <DependentUpon>202301191431504_2try.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301191435147_try3.resx">
-      <DependentUpon>202301191435147_try3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301191442132_new-base.resx">
-      <DependentUpon>202301191442132_new-base.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301191448266_name-change.resx">
-      <DependentUpon>202301191448266_name-change.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301191504359_again.resx">
-      <DependentUpon>202301191504359_again.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

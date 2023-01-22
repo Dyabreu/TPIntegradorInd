@@ -101,7 +101,7 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(206, 151);
+            this.btnInsertar.Location = new System.Drawing.Point(188, 151);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(75, 23);
             this.btnInsertar.TabIndex = 8;
@@ -111,7 +111,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(320, 151);
+            this.btnEliminar.Location = new System.Drawing.Point(313, 151);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 9;
@@ -121,7 +121,7 @@
             // 
             // btnTraerUno
             // 
-            this.btnTraerUno.Location = new System.Drawing.Point(443, 151);
+            this.btnTraerUno.Location = new System.Drawing.Point(441, 151);
             this.btnTraerUno.Name = "btnTraerUno";
             this.btnTraerUno.Size = new System.Drawing.Size(105, 23);
             this.btnTraerUno.TabIndex = 10;

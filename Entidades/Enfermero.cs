@@ -12,7 +12,6 @@ namespace Entidades
     public class Enfermero : Persona
     {
         public string Cuil { get; set; }
-        public List<Paciente> Pacientes { get; set; }
     }
 }
 

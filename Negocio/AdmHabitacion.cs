@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using Dac;
@@ -25,13 +26,11 @@ namespace Negocio
 
         public static List<Habitacion> ListarTodo()
         {
-
             return DacHabitacion.Select();
         }
-        public static List<Habitacion> Listar(int Estado)
+        public static List<Habitacion> Listar(string Estado)
         {
-            //TODO…Seleccionar codigo para listar por Estado
-            return null;
+            return DacHabitacion.Select(Estado);
         }
         public static int Insertar(Habitacion habitacion)
         {

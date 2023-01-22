@@ -17,6 +17,8 @@ namespace Entidades
         [Column(TypeName = "varchar")]
         [StringLength(10)]
         public string Estado { get; set; }
-        public List<Paciente> Pacientes { get; set; }
+
+        //public List<Paciente> Pacientes { get; set; }
+
     }
 }

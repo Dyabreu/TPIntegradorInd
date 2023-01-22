@@ -28,7 +28,7 @@ namespace Entidades
 
         public Director Director { get; set; }
 
-        public List<Habitacion> Habitaciones { get; set; }
+        //public List<Habitacion> Habitaciones { get; set; }
 
 
     }

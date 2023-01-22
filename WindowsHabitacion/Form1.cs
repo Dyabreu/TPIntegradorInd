@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,7 +24,6 @@ namespace WindowsHabitacion
         private void Form1_Load(object sender, EventArgs e)
         {
             MostrarTodo();
-
         }
         private void MostrarTodo()
         {
@@ -50,12 +50,32 @@ namespace WindowsHabitacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            /*Director director = new Director()
+            {
+                Nombre = "Cole",
+                Apellido = "Perez",
+                Telefono = "9213923129",
+                Email = "cole@gmail.com",
+                Domicilio = "Buenos Aires",
+                PostGrado = "Clinica",
+            };
+
+            Clinica clinica = new Clinica()
+            {
+                Nombre = "SantaAlgo",
+                Domicilio = "Buenos Aires",
+                Telefono = "139129319321",
+                Email = "santa@gmail.com",
+                Director = director,
+            };*/
+
             Habitacion habitacion = new Habitacion()
             {
                 Id = Convert.ToInt32(txtId.Text),
-                Numero = Convert.ToInt32((string)txtNumero.Text),
-                Estado = txtEstado.Text
+                Numero = Convert.ToInt32(txtNumero.Text),
+                Estado = txtEstado.Text,
             };
+
 
             int filasAfectadas = AdmHabitacion.Eliminar(habitacion.Id);
 
@@ -63,8 +83,9 @@ namespace WindowsHabitacion
             {
                 MessageBox.Show("Delete ok");
                 MostrarTodo();
-                }
             }
+
+        }
 
 
         private void btnTraerUno_Click(object sender, EventArgs e)
@@ -74,5 +95,7 @@ namespace WindowsHabitacion
             MessageBox.Show("Habitacion número " + habitacion.Numero + " " + habitacion.Estado + ".");
 
         }
+
+
     }
 }

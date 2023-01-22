@@ -20,7 +20,7 @@ namespace Entidades
         [StringLength(50)]
         [Required]
         public string Especialidad { get; set; }
-        public List<Paciente> Pacientes { get; set; }
+        //public List<Paciente> Pacientes { get; set; }
 
     }
 }

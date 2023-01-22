@@ -31,12 +31,9 @@ namespace WindowsPaciente
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            Enfermero enfermero = new Enfermero();
-            { enfermero.Nombre = "Raul"; enfermero.Apellido = "Montez"; enfermero.Telefono = "492209132"; enfermero.Email = "raulmontez@gmail.com"; enfermero.Domicilio = "CABA"; enfermero.Cuil = "24-32929-2002"; }
-            Medico medico = new Medico();
-            { medico.Nombre = "Sebastian"; medico.Apellido = "Roro"; medico.Telefono = "9139392"; medico.Email = "sebastian@gmail.com"; medico.Domicilio = "Merlo"; medico.Matricula = "29392D"; medico.Especialidad = "Obstetra"; }
-            Habitacion habitacion = new Habitacion();
-            { habitacion.Numero = 12345; habitacion.Estado = "Ocupada"; }
+            /*Enfermero enfermero = new Enfermero();
+            { enfermero.Nombre = "Raul"; enfermero.Apellido = "Montez"; enfermero.Telefono = "492209132"; enfermero.Email = "raulmontez@gmail.com"; enfermero.Domicilio = "CABA"; enfermero.Cuil = "24-32929-2002"; }*/
+ 
 
             Paciente paciente = new Paciente()
             {
@@ -46,9 +43,6 @@ namespace WindowsPaciente
                 Email = txtEmail.Text,
                 Domicilio = txtDomicilio.Text,
                 NroHistoriaClinica = Convert.ToInt32(txtNroHC.Text),
-                Enfermero = enfermero,
-                Habitacion = habitacion,
-                Medico = medico
             };
 
             int filasAfectadas = AdmPaciente.Insertar(paciente);
@@ -62,25 +56,18 @@ namespace WindowsPaciente
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            Enfermero enfermero2 = new Enfermero();
-            { enfermero2.Nombre = "Raul"; enfermero2.Apellido = "Montez"; enfermero2.Telefono = "492209132"; enfermero2.Email = "raulmontez@gmail.com"; enfermero2.Domicilio = "CABA"; enfermero2.Cuil = "24-32929-2002"; }
-            Medico medico2 = new Medico();
-            { medico2.Nombre = "Sebastian"; medico2.Apellido = "Roro"; medico2.Telefono = "9139392"; medico2.Email = "sebastian@gmail.com"; medico2.Domicilio = "Merlo"; medico2.Matricula = "29392D"; medico2.Especialidad = "Obstetra"; }
-            Habitacion habitacion2 = new Habitacion();
-            { habitacion2.Numero = 12345; habitacion2.Estado = "Ocupada"; }
+            /*Enfermero enfermero2 = new Enfermero();
+            { enfermero2.Nombre = "Raul"; enfermero2.Apellido = "Montez"; enfermero2.Telefono = "492209132"; enfermero2.Email = "raulmontez@gmail.com"; enfermero2.Domicilio = "CABA"; enfermero2.Cuil = "24-32929-2002"; }*/
 
             Paciente paciente = new Paciente()
             {
                 Id = Convert.ToInt32(txtId.Text),
-                NroHistoriaClinica = Convert.ToInt32(txtNroHC.Text),
                 Nombre = txtNombre.Text,
                 Apellido = txtApellido.Text,
                 Telefono = txtTelefono.Text,
                 Email = txtEmail.Text,
                 Domicilio = txtDomicilio.Text,
-                Enfermero = enfermero2,
-                Habitacion = habitacion2,
-                Medico = medico2
+                NroHistoriaClinica = Convert.ToInt32(txtNroHC.Text),
             };
 
             int filasAfectadas = AdmPaciente.Eliminar(paciente.Id);
@@ -90,6 +77,7 @@ namespace WindowsPaciente
                 MessageBox.Show("Delete ok");
                 MostrarTodo();
             }
+
 
         }
 
