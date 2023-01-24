@@ -74,9 +74,9 @@ namespace WindowsHabitacion
 
         private void btnTraerUno_Click(object sender, EventArgs e)
         {
-            int numero = Convert.ToInt32(txtNumero.Text);
-            Habitacion habitacion = AdmHabitacion.TraerUno(numero);
-            MessageBox.Show("La habitacion está " + habitacion.Estado + ".");
+            int id = Convert.ToInt32(txtId.Text);
+            Habitacion habitacion = AdmHabitacion.TraerUno(id);
+            MessageBox.Show("Habitacion número " + habitacion.Numero + " está" + habitacion.Estado + ".");
 
         }
 

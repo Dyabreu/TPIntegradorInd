@@ -20,6 +20,7 @@ namespace Dac
         {
             //TODO
             return null;
+
         }
     public static int Insert(Medico medico)
         {

@@ -27,9 +27,9 @@ namespace Dac
             return context.SaveChanges();
         }
 
-        public static Habitacion SelectById(int id)
+        public static Habitacion SelectById(int nro)
         {
-            return context.Habitaciones.Find(id);
+            return context.Habitaciones.Find(nro);
         }
         public static int Eliminar(int id)
         {
