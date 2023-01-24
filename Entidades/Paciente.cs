@@ -16,20 +16,20 @@ namespace Entidades
         #region Propiedades de navegacion 
         #endregion
 
-        /*public int EnfermeroId { get; set; }
+        public int? EnfermeroId { get; set; }
 
         [ForeignKey("EnfermeroId")]
         public Enfermero Enfermero { get; set; }
 
-        public int MedicoId { get; set; }
+        public int? MedicoId { get; set; }
 
         [ForeignKey("MedicoId")]
         public Medico Medico { get; set; }
 
-        public int HabitacionId { get; set; }
+        public int? HabitacionId { get; set; }
 
         [ForeignKey("HabitacionId")]
-        public Habitacion Habitacion { get; set; }*/
+        public Habitacion Habitacion { get; set; }
 
     }
 

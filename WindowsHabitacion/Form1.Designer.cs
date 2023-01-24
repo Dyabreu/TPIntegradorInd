@@ -38,26 +38,28 @@
             this.btnInsertar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnTraerUno = new System.Windows.Forms.Button();
+            this.lblClinica = new System.Windows.Forms.Label();
+            this.txtClinica = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridHabitacion)).BeginInit();
             this.SuspendLayout();
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(130, 95);
+            this.txtId.Location = new System.Drawing.Point(59, 94);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 22);
             this.txtId.TabIndex = 0;
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(313, 95);
+            this.txtNumero.Location = new System.Drawing.Point(242, 94);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(100, 22);
             this.txtNumero.TabIndex = 1;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(501, 95);
+            this.txtEstado.Location = new System.Drawing.Point(430, 94);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(100, 22);
             this.txtEstado.TabIndex = 2;
@@ -75,7 +77,7 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(154, 75);
+            this.lblId.Location = new System.Drawing.Point(83, 74);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(18, 16);
             this.lblId.TabIndex = 4;
@@ -84,7 +86,7 @@
             // Número
             // 
             this.Número.AutoSize = true;
-            this.Número.Location = new System.Drawing.Point(338, 75);
+            this.Número.Location = new System.Drawing.Point(267, 74);
             this.Número.Name = "Número";
             this.Número.Size = new System.Drawing.Size(55, 16);
             this.Número.TabIndex = 5;
@@ -93,7 +95,7 @@
             // Estado
             // 
             this.Estado.AutoSize = true;
-            this.Estado.Location = new System.Drawing.Point(525, 75);
+            this.Estado.Location = new System.Drawing.Point(454, 74);
             this.Estado.Name = "Estado";
             this.Estado.Size = new System.Drawing.Size(50, 16);
             this.Estado.TabIndex = 6;
@@ -129,11 +131,29 @@
             this.btnTraerUno.UseVisualStyleBackColor = true;
             this.btnTraerUno.Click += new System.EventHandler(this.btnTraerUno_Click);
             // 
+            // lblClinica
+            // 
+            this.lblClinica.AutoSize = true;
+            this.lblClinica.Location = new System.Drawing.Point(616, 74);
+            this.lblClinica.Name = "lblClinica";
+            this.lblClinica.Size = new System.Drawing.Size(58, 16);
+            this.lblClinica.TabIndex = 12;
+            this.lblClinica.Text = "ClinicaId";
+            // 
+            // txtClinica
+            // 
+            this.txtClinica.Location = new System.Drawing.Point(598, 94);
+            this.txtClinica.Name = "txtClinica";
+            this.txtClinica.Size = new System.Drawing.Size(100, 22);
+            this.txtClinica.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblClinica);
+            this.Controls.Add(this.txtClinica);
             this.Controls.Add(this.btnTraerUno);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnInsertar);
@@ -165,6 +185,8 @@
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnTraerUno;
+        private System.Windows.Forms.Label lblClinica;
+        private System.Windows.Forms.TextBox txtClinica;
     }
 }
 

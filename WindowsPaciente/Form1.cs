@@ -31,8 +31,6 @@ namespace WindowsPaciente
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            /*Enfermero enfermero = new Enfermero();
-            { enfermero.Nombre = "Raul"; enfermero.Apellido = "Montez"; enfermero.Telefono = "492209132"; enfermero.Email = "raulmontez@gmail.com"; enfermero.Domicilio = "CABA"; enfermero.Cuil = "24-32929-2002"; }*/
  
 
             Paciente paciente = new Paciente()
@@ -43,6 +41,7 @@ namespace WindowsPaciente
                 Email = txtEmail.Text,
                 Domicilio = txtDomicilio.Text,
                 NroHistoriaClinica = Convert.ToInt32(txtNroHC.Text),
+
             };
 
             int filasAfectadas = AdmPaciente.Insertar(paciente);
@@ -56,8 +55,7 @@ namespace WindowsPaciente
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            /*Enfermero enfermero2 = new Enfermero();
-            { enfermero2.Nombre = "Raul"; enfermero2.Apellido = "Montez"; enfermero2.Telefono = "492209132"; enfermero2.Email = "raulmontez@gmail.com"; enfermero2.Domicilio = "CABA"; enfermero2.Cuil = "24-32929-2002"; }*/
+  
 
             Paciente paciente = new Paciente()
             {

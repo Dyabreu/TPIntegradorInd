@@ -35,7 +35,8 @@ namespace WindowsHabitacion
             Habitacion habitacion = new Habitacion()
             {
                 Numero = Convert.ToInt32(txtNumero.Text),
-                Estado= txtEstado.Text
+                Estado= txtEstado.Text,
+                ClinicaId = Convert.ToInt32(txtClinica.Text)
 
             };
 
@@ -50,30 +51,13 @@ namespace WindowsHabitacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            /*Director director = new Director()
-            {
-                Nombre = "Cole",
-                Apellido = "Perez",
-                Telefono = "9213923129",
-                Email = "cole@gmail.com",
-                Domicilio = "Buenos Aires",
-                PostGrado = "Clinica",
-            };
-
-            Clinica clinica = new Clinica()
-            {
-                Nombre = "SantaAlgo",
-                Domicilio = "Buenos Aires",
-                Telefono = "139129319321",
-                Email = "santa@gmail.com",
-                Director = director,
-            };*/
 
             Habitacion habitacion = new Habitacion()
             {
                 Id = Convert.ToInt32(txtId.Text),
                 Numero = Convert.ToInt32(txtNumero.Text),
                 Estado = txtEstado.Text,
+                ClinicaId = Convert.ToInt32(txtClinica.Text)
             };
 
 
@@ -90,9 +74,9 @@ namespace WindowsHabitacion
 
         private void btnTraerUno_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(txtId.Text);
-            Habitacion habitacion = AdmHabitacion.TraerUno(id);
-            MessageBox.Show("Habitacion número " + habitacion.Numero + " " + habitacion.Estado + ".");
+            int numero = Convert.ToInt32(txtNumero.Text);
+            Habitacion habitacion = AdmHabitacion.TraerUno(numero);
+            MessageBox.Show("La habitacion está " + habitacion.Estado + ".");
 
         }
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    [Table("Clinicas")]
+    [Table("Clinica")]
     public class Clinica
     {
         public int Id { get; set; }
@@ -26,9 +26,11 @@ namespace Entidades
         [StringLength(30)]
         public string Email { get; set; }
 
+        public int? DirectorId { get; set; }
+        [ForeignKey("DirectorId")]
         public Director Director { get; set; }
 
-        //public List<Habitacion> Habitaciones { get; set; }
+        public List<Habitacion> Habitaciones { get; set; }
 
 
     }
